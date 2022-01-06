@@ -1,5 +1,7 @@
 // min 990px
 @media screen and (min-width:990px) {
+
+body {
     #bloc-page {  
         header {
             .navbar-pc {
@@ -56,6 +58,7 @@
                 background-size: cover;
             }
     }
+}
 }
 
 //min 800px
