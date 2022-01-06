@@ -1,0 +1,20 @@
+#bloc-page {
+    font-family: $police-text;
+    p {
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    #nav-bar {
+        .nav-large {
+            a {
+                font-size: medium;
+            }
+        }
+    }
+
+}

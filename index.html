@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Animalerie pour animaux de compagnie, produits pour chien, chat, rongeur, oiseau et poisson">
+    <title>La Nîmes'Alerie</title>
+    <link rel="icon" href="./public/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="bloc-page">
+
+        <!--########################## HEADER ###################################-->
+        <header>
+            <!--HEADER DELIVERY RETURN-->
+            <div id="bar-delivery">
+                <div class="del-ret">
+                    <img src="./public/img/livraison.svg" alt="Logo livraison gratuite">
+                    <p>Livraison offerte dès 49 €</p>
+                </div>
+                <div class="del-ret return d-none">
+                    <img src="./public/img/retour.svg" alt="Logo retour gratuit">
+                    <p>Retour gratuit sous 30 jours</p>
+                </div>
+            </div>
+            <!--LOGO BASKET NAVBAR-->
+            <div id="nav-bar">
+                <img id="logo" src="./public/img/logo.svg" alt="Logo La Nîmes'Alerie">
+                <!-- SEARCHBAR PC VERSION-->
+                <div class="search d-none" id="pc_search">
+                    <label for="search_bar"></label>
+                    <input class="inputs" type="search" id="search_bar" name="search_bar"
+                        placeholder="Recherche de produits..." aria-label="Search through site content">
+                    <button class="btn btn-white"><img class="icon" src="./public/img/searchsvg.svg"
+                            alt="Recherche"></button>
+                </div>
+                <!--LOGO PANIER CONNEXION-->
+                <div class="logos">
+                    <button><img class="icon" src="./public/img/connexion.png" alt="Logo connexion"></button>
+                    <img class="icon" src="./public/img/card.png" alt="Logo panier">
+                </div>
+                <!--NAVBAR MOBILE-->
+                <nav class="navbar navbar-expand-lg navbar-light bg-wight d-none-pc">
+                    <div class="container-fluid nav-mobile">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Chien</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Chat</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Oiseau</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Rongeur</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Poisson</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Promos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!--NAVBAR PC-->
+                <nav class="navbar navbar-expand-lg navbar-light bg-white d-none nav-large navbar-pc w-100">
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav text-uppercase h3 w-100 d-flex justify-content-around">
+                            <a class="nav-item nav-link active" href="#">Chien</a>
+                            <a class="nav-item nav-link" href="#">Chat</a>
+                            <a class="nav-item nav-link" href="#">Poisson</a>
+                            <a class="nav-item nav-link" href="#">Rongeur</a>
+                            <a class="nav-item nav-link" href="#">Oiseau</a>
+                            <a class="nav-item nav-link" href="#">Promos</a>
+                            <a class="nav-item nav-link" href="#">Contact</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+            <!--SEARCHBAR PRODUCTS VERSION MOBILE-->
+            <div class="search d-none-pc">
+                <label for="search_bar"></label>
+                <input class="inputs" type="search" id="search_bar" name="search_bar"
+                    placeholder="Recherche de produits..." aria-label="Search through site content">
+                <button class="btn btn-white "><img class="icon" src="public/img/searchsvg.svg"
+                        alt="Recherche"></button>
+            </div>
+        </header>
+
+        <!--######################### SECTION CAROUSEL ####################################-->
+        <section id="section-carousel">
+            <h1 class="text-center">L'animalerie pensée pour vos animaux&nbsp;!</h1>
+            <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./public/img/banner_promo.jpg" class="d-block w-100"
+                            alt="Bénéficiez de 5% sur tout le site en vous inscrivant à notre newsletter">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./public/img/banner_space.png" class="d-block w-100"
+                            alt="Offrez un voyage dans l'espace à votre compagnon">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./public/img/banner_cat_present.jpg" class="d-block w-100"
+                            alt="Code promotionnel sur tout le rayon chat pour la journée internationale du chat">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+
+        <!--######################### SECTION BEST SELLERS ####################################-->
+        <section id="section-sales">
+            <h2>Meilleures ventes</h2>
+            <div id="grid-best-sellers">
+                <!--grande image-->
+                <img class="big" src="./public/img/arbre_chat_grand.png" alt="Arbre à chat design" width="100%">
+                <!--fiches produits-->
+                <div class="product-card card1">
+                    <img src="./public/img/panier_rex.png" alt="Panier Rex">
+                    <p>Panier rond Rex</p>
+                    <div class="stars">
+                        <img src="./public/img/yellow_star.svg" alt="avis client">
+                        <img src="./public/img/yellow_star.svg" alt="avis client">
+                        <img src="./public/img/yellow_star.svg" alt="avis client">
+                        <img src="./public/img/yellow_star.svg" alt="avis client">
+                        <img src="./public/img/grey_star.svg" alt="avis client">
+                    </div>
+                    <p>74,90 €</p>
+                </div>
+                <div class="product-card card2">
+                    <img src="./public/img/niche_boby.png" alt="Niche Bobby">
+                    <p>Niche Bobby</p>
+                    <div class="stars">
+                        <img src="./public/img/yellow_star.svg" alt="avis client">
+                        <img src="./public/img/yellow_star.svg" alt="avis client">
+                        <img src="./public/img/yellow_star.svg" alt="avis client">
+                        <img src="./public/img/yellow_star.svg" alt="avis client">
+                        <img src="./public/img/grey_star.svg" alt="avis client">
+                    </div>
+                    <p>109,90 €</p>
+                </div>
+                <div class="product-card card3">
+                    <img src="./public/img/sac_foin_bamby.png" alt="">
+                    <p>Sac à foin Bamby</p>
+                    <div class="stars">
+                        <img src="./public/img/yellow_star.svg" alt="avis client">
+                        <img src="./public/img/yellow_star.svg" alt="avis client">
+                        <img src="./public/img/yellow_star.svg" alt="avis client">
+                        <img src="./public/img/yellow_star.svg" alt="avis client">
+                        <img src="./public/img/yellow_star.svg" alt="avis client">
+                    </div>
+                    <p>23,90 €</p>
+                </div>
+                <div class="product-card card4">
+                    <img src="./public/img/arbre_chat_case.png" alt="Arbre à chat Case">
+                    <p>Arbre à chat Case</p>
+                    <div class="stars">
+                        <img src="./public/img/yellow_star.svg" alt="avis client">
+                        <img src="./public/img/yellow_star.svg" alt="avis client">
+                        <img src="./public/img/yellow_star.svg" alt="avis client">
+                        <img src="./public/img/yellow_star.svg" alt="avis client">
+                        <img src="./public/img/grey_star.svg" alt="avis client">
+                    </div>
+                    <p>89,90 €</p>
+                </div>
+            </div>
+            <a href="#" class="button button-color-base" role="button">Tous nos produits</a>
+        </section>
+
+        <!--######################### ABOUT ####################################-->
+        <section id="section-about" class="mb-4 d-flex">
+            <div class="d-none image-about">
+                <img class="image-one" src="./public/img/fillette.png" alt="Enfant et son lapin">
+                <img class="image-two" src="./public/img/chaton.png " alt="Chaton" width="100%">
+                <img class="image-three" src="./public/img/chien_coucher_soleil.png" alt="Chien" width="100%">
+            </div>
+            <div class="about-text d-flex flex-column mt-4 mb-4">
+                <h2 class="text-center">Les animaux, <span>notre</span> passion&nbsp;!</h2>
+                <p class="text-center">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt laborum incidunt ut saepe
+                    dolor.
+                    Id inventore officia, doloremque nemo sint sequi fugit. Similique, odio temporibus! Minima,
+                    eum
+                    odit?
+                    Ipsam, necessitatibus?
+                </p>
+            </div>
+        </section>
+
+        <!--######################### SECTION NEWSLETTER ####################################-->
+        <section id="section-newsletter" class="mt-3 mb-5 d-flex flex-column justify-content-center align-items-center">
+            <img src="./public/img/chien-noir-et-blanc.png" alt="Chien noir et blanc">
+            <h2 class="text-center">Restez informés de nos offres et promos</h2>
+            <p class="text-center">en vous inscrivant à notre newsletter&nbsp;!</p>
+            <div>
+                <a class="button button-outline-color-base mb-5 mt-4" href="">Je m'inscris&nbsp;!</a>
+            </div>
+        </section>
+
+        <!--######################### SECTION NOTICES ####################################-->
+        <section id="section-notices" class="mb-4">
+            <h2 class="mb-4">Nos clients ont aimé</h2>
+            <div class="container">
+                <div class="notice">
+                    <img class="profile" src="./public/img/avis1.png" alt="Photo de Sabrina R.">
+                    <div class="notice-com">
+                        <p>Sabrina R.</p>
+                        <div class="stars">
+                            <img src="./public/img/yellow_star.svg" alt="avis client">
+                            <img src="./public/img/yellow_star.svg" alt="avis client">
+                            <img src="./public/img/yellow_star.svg" alt="avis client">
+                            <img src="./public/img/yellow_star.svg" alt="avis client">
+                            <img src="./public/img/yellow_star.svg" alt="avis client">
+                        </div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas sapiente, quasi
+                            recusandae, quae
+                            commodi labore atque vero id dolores quo doloremque doloribus, provident
+                            voluptatibus
+                            consequuntur maiores mollitia esse impedit cupiditate?</p>
+                    </div>
+                </div>
+                <div class="notice">
+                    <img class="profile" src="./public/img/avis2.png" alt="Photo de Sandra B.">
+                    <div class="notice-com">
+                        <p>Sandra B.</p>
+                        <div class="stars">
+                            <img src="./public/img/yellow_star.svg" alt="avis client">
+                            <img src="./public/img/yellow_star.svg" alt="avis client">
+                            <img src="./public/img/yellow_star.svg" alt="avis client">
+                            <img src="./public/img/yellow_star.svg" alt="avis client">
+                            <img src="./public/img/yellow_star.svg" alt="avis client">
+                        </div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas sapiente, quasi
+                            recusandae, quae
+                            commodi labore atque vero id dolores quo doloremque doloribus, provident
+                            voluptatibus
+                            consequuntur maiores mollitia esse impedit cupiditate?</p>
+                    </div>
+                </div>
+                <div class="notice">
+                    <img class="profile" src="./public/img/avis3.png" alt="Photo de Laure F.">
+                    <div class="notice-com">
+                        <p>Laure F.</p>
+                        <div class="stars">
+                            <img src="./public/img/yellow_star.svg" alt="avis client">
+                            <img src="./public/img/yellow_star.svg" alt="avis client">
+                            <img src="./public/img/yellow_star.svg" alt="avis client">
+                            <img src="./public/img/yellow_star.svg" alt="avis client">
+                            <img src="./public/img/grey_star.svg" alt="avis client">
+                        </div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas sapiente, quasi
+                            recusandae, quae
+                            commodi labore atque vero id dolores quo doloremque doloribus, provident
+                            voluptatibus
+                            consequuntur maiores mollitia esse impedit cupiditate?</p>
+                    </div>
+                </div>
+                <div class="notice">
+                    <img class="profile" src="./public/img/avis4.png" alt="Photo de Emma B.">
+                    <div class="notice-com">
+                        <p>Emma B.</p>
+                        <div class="stars">
+                            <img src="./public/img/yellow_star.svg" alt="avis client">
+                            <img src="./public/img/yellow_star.svg" alt="avis client">
+                            <img src="./public/img/yellow_star.svg" alt="avis client">
+                            <img src="./public/img/yellow_star.svg" alt="avis client">
+                            <img src="./public/img/grey_star.svg" alt="avis client">
+                        </div>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas sapiente, quasi
+                            recusandae, quae
+                            commodi labore atque vero id dolores quo doloremque doloribus, provident
+                            voluptatibus
+                            consequuntur maiores mollitia esse impedit cupiditate?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--######################### SECTIONS INFOS ####################################-->
+        <section id="section-infos" class="mb-4">
+            <div class="bloc-infos">
+                <h3>Livraison</h3>
+                <div class="imgDelivery">
+                    <img src="./public/img/mondial_relai.svg" alt="Mondial Relay">
+                    <img src="./public/img/colissimo.svg" alt="colissimo">
+                </div>
+            </div>
+
+            <div class="bloc-infos">
+                <h3>Moyens de paiement</h3>
+                <img src="./public/img/paiements.svg" alt="" width="100%">
+            </div>
+        </section>
+
+        <!--FOOTER-->
+        <footer class="pt-3">
+            <div class="bloc-footer">
+                <h3>Nos services</h3>
+                <hr>
+                <a href="">Mon compte</a>
+                <a href="">Mes commandes</a>
+                <a href="#newsletter">Newsletter</a>
+            </div>
+            <div class="bloc-footer">
+                <h3>Vos avantages</h3>
+                <hr>
+                <a href="">Service clients gratuit</a>
+                <a href="">Paiement sécurisé</a>
+                <a href="">Retour offert sous 30 jours</a>
+            </div>
+            <div class="bloc-footer">
+                <h3>À propos</h3>
+                <hr>
+                <a href="">Qui sommes-nous?</a>
+            </div>
+            <div class="bloc-footer">
+                <h3>Notre magasin</h3>
+                <hr>
+                <a href="./horaires.php">Horaires du magasin</a>
+                <a href="">Contact</a>
+                <a href="">Recrutement</a>
+            </div>
+            <div>
+                <a href="">Mentions légales</a><a href="">CGV</a><a href="">Protection des données</a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JS -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+    <!-- SCRIPT LOGIN -->
+    <script src="login.js"></script>
+
+</body>
+
+</html>

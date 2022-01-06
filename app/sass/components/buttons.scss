@@ -1,0 +1,31 @@
+// layout buttons
+.button {
+    border-radius: $border-radius;
+    padding: 0.7rem 1.3rem;
+    margin: 1rem 0;
+    opacity: 80%;   
+    input {
+        background-color: none;
+        border: none;
+    } 
+}
+// burger menu
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+// buttons outline color base
+.button-outline-color-base, .button-color-base:hover {
+    color: $color-1!important;
+    background-color: transparent;
+    border: 1px solid $color-1;
+}
+
+// buttons color base
+.button-color-base, .button-outline-color-base:hover {
+    background-color: $color-1;
+    color: white!important;
+}
+
+
+

@@ -1,0 +1,33 @@
+#bloc-page {
+    footer {
+        width: 100%;
+        a {
+            color: $color-4;
+        }
+        background-color: $color-2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .bloc-footer {
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            margin: 1rem;
+            h3 {
+                color: $color-1;
+            }
+        }
+        // last div
+        div:last-child {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 200px;
+            margin: 2rem 0;
+            a {
+                color: $color-1;
+            }
+        }
+    }
+}

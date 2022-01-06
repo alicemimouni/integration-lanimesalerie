@@ -1,0 +1,171 @@
+// min 990px
+@media screen and (min-width:990px) {
+    #bloc-page {  
+        header {
+            .navbar-pc {
+                display: flex!important;
+            }
+            #pc_search {  
+                display: flex!important;
+            }
+        }
+        .d-none-pc {
+            display: none;
+        }  
+        // section about
+        #section-about {
+            .image-about {
+                display: flex!important;
+            }
+            #about-text {
+                width: 50%;
+            }
+        }
+            //section-best-sellers
+            #grid-best-sellers {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                grid-gap: 15px;
+                margin-bottom: 2rem;
+                .big {
+                    display: flex!important;
+                    grid-column: 1/3;
+                    grid-row: 1/3;
+                }
+                .card1 {
+                    grid-column: 3/4;
+                    grid-row: 1/2;
+                }
+                .card2 {
+                    grid-column: 4/5;
+                    grid-row: 1/2;
+                }
+                .card3 {
+                    grid-column: 3/4;
+                    grid-row: 2/3;
+                }
+                .card4 {
+                    grid-column: 4/5;
+                    grid-row: 2/3;
+                }
+            }
+            #section-newsletter {
+                background-image: url('../../../img/background_newsletter.png');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+    }
+}
+
+//min 800px
+@media screen and (min-width:800px) {
+    .d-none {
+        display: flex;
+    }
+    body {
+        #bloc-page {
+            header {
+                .return {
+                    display: flex;
+                }
+                .logos {
+                    margin-right: 2rem;
+                    .icon, button .icon {
+                        width: 30px;
+                    }    
+                }
+            }
+            #bar-delivery {
+                .return {
+                    display: flex!important;
+                }
+                //bloc-return
+                .del-ret {
+                    display: flex;
+                }
+            }
+            // section infos
+            #section-infos {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            //section notices
+            #section-notices {
+                .container {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+        }
+    }
+}
+
+// min 620px
+@media screen and (min-width:620px) {
+
+body {
+    #bloc-page {   
+        h1 {
+            text-transform: uppercase;
+        }
+        h2 {
+            font-size: 2rem;
+        }
+        #nav-bar {
+            #logo {
+                    width: 15rem;
+                    margin-bottom: 1rem;
+            }
+            .logos {
+                button {
+                    margin-right: 2rem;
+                }
+            }
+        }
+        // footer
+        footer {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-start;
+            div:last-child {
+                flex-direction: row;
+                justify-content: center;
+                width: 100%;
+                a {
+                    margin: 0 2rem;
+                }
+            }
+        }
+    }
+}
+}
+
+//MIN 400PX
+@media screen and (min-width:400px) {
+    body {
+        #bloc-page {
+            header {
+                #nav-bar {
+                    .logos {
+                        button {
+                            margin-right: 3rem;
+                        }
+                    }
+                }
+            }
+        //CAROUSEL
+            #section-carousel {
+                .carousel {
+                    height: initial;
+                    img {
+                        height:inherit;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
