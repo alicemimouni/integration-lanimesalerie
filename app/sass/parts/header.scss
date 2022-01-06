@@ -52,6 +52,9 @@ header {
         }
         //navbar mobile
         .nav-mobile {
+            ul {
+                margin-left: 1rem;
+            }
             .navbar-toggler:focus {
                 box-shadow: none;
                 padding: 0;
