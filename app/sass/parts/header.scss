@@ -6,45 +6,17 @@ header {
     justify-content: center;
     align-items: center;
     opacity: .9;
-
-    // bar delivery return header
-    #bar-delivery {
-        display: flex;
-        justify-content: space-between;
-        background-color: $color-2;
-        margin-bottom: 1rem;
-        width: 100%;
-        .return {
-            display: none!important;
-        }
-        .del-ret {
-            p {
-                margin: 1rem;
-                padding-left: 1rem;
-            }
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            
-            // icons bar delivery return
-            img {
-                width: 40px;
-                margin:0.3rem 0;
-            }
-        }
-    }
+    position: sticky;
+    top: -1px;
+    background-color: white;
+    z-index: 1;
+    box-shadow: $box-shadow;
 
     //bar login cart nav-mobile
     #nav-bar {
         display: flex;
         flex-wrap: wrap;
         align-items: space-around;
-        position: sticky;
-        top: -1px;
-        background-color: white;
-            //top: 0;
-        z-index: 1;
         width: 100%;
         // search bar pc
         #pc_search {
@@ -127,5 +99,31 @@ header {
     }
 }
 
-
+// bar delivery return header
+#bar-delivery {
+    display: flex;
+    justify-content: space-between;
+    background-color: $color-2;
+    margin-bottom: 1rem;
+    width: 100%;
+    .return {
+        display: none!important;
+    }
+    .del-ret {
+        p {
+            margin: 1rem;
+            padding-left: 1rem;
+        }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        
+        // icons bar delivery return
+        img {
+            width: 40px;
+            margin:0.3rem 0;
+        }
+    }
+}
 
