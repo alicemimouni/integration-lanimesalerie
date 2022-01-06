@@ -24,12 +24,8 @@ header {
         }
         //navbar mobile
         .nav-mobile {
-            ul {
-                margin-left: 1rem;
-            }
             .navbar-toggler:focus {
                 box-shadow: none;
-                padding: 0;
                 line-height: 0;
                 }
         }
@@ -106,9 +102,6 @@ header {
     background-color: $color-2;
     margin-bottom: 1rem;
     width: 100%;
-    .return {
-        display: none!important;
-    }
     .del-ret {
         p {
             margin: 1rem;

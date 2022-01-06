@@ -1,12 +1,15 @@
+// bootstrap import
+// ################
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 // import scss files
 // #################
 
 // bases
 @import "./bases/variables.scss";
+@import "./bases/body.scss";
 @import "./bases/responsive.scss";
 @import "./bases/typography.scss";
-@import "./bases/body.scss";
 @import "./bases/colors.scss";
 //components
 @import "./components/buttons.scss";
@@ -22,9 +25,6 @@
 @import "./parts/header.scss";
 @import "./parts/footer.scss";
 
-// bootstrap import
-// ################
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 // import police
 // #############

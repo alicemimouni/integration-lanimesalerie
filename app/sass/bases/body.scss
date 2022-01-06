@@ -4,6 +4,9 @@ body {
     text-align: center;
     box-sizing: border-box;
     #bloc-page {   
+        #section-about .image-about, #grid-best-sellers .big,  #bar-delivery .return, .navbar-pc, #pc_search {
+            display: none;
+        }
         margin: auto;
         box-shadow: 0 10px 35px 0 rgb(0 0 0 / 18%);
         border: none;
