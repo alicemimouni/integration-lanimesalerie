@@ -1,27 +1,33 @@
 #section-about {
     max-width: 980px;
+
     p {
         text-align: center;
     }
+
     // images
     .image-about {
         position: relative;
         width: 500px;
+
         img {
             width: 200px;
         }
+
         .image-one {
             position: absolute;
             top: -30px;
             left: 80px;
             z-index: 0;
         }
+
         .image-two {
             position: absolute;
             top: 30px;
             right: 60px;
             z-index: -1;
         }
+
         .image-three {
             position: absolute;
             left: 80px;
@@ -29,16 +35,18 @@
             z-index: -2;
         }
     }
+
     // span color title
     h2 {
         span {
             color: $color-1;
         }
     }
+
     .about-text {
         margin: auto;
         display: flex;
-        flex-direction: column;  
+        flex-direction: column;
         max-width: 400px;
     }
 }

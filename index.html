@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Animalerie pour animaux de compagnie, produits pour chien, chat, rongeur, oiseau et poisson">
+    <meta name="description"
+        content="Animalerie pour animaux de compagnie, produits pour chien, chat, rongeur, oiseau et poisson">
     <title>La Nîmes'Alerie</title>
     <link rel="icon" href="./public/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
@@ -28,22 +29,9 @@
             </div>
         </div>
         <header>
-            <!--LOGO BASKET NAVBAR-->
+            <!--LOGO CART LOGIN NAVBAR-->
             <div id="nav-bar">
-                <img id="logo" src="./public/img/logo.svg" alt="Logo La Nîmes'Alerie">
-                <!-- SEARCHBAR PC VERSION-->
-                <div class="search" id="pc_search">
-                    <label for="search_bar"></label>
-                    <input class="inputs" type="search" id="search_bar" name="search_bar"
-                        placeholder="Recherche de produits..." aria-label="Search through site content">
-                    <button class="btn btn-white"><img class="icon" src="./public/img/searchsvg.svg"
-                            alt="Recherche"></button>
-                </div>
-                <!--LOGO PANIER CONNEXION-->
-                <div class="logos">
-                    <button><img class="icon" src="./public/img/connexion.png" alt="Logo connexion"></button>
-                    <img class="icon" src="./public/img/card.png" alt="Logo panier">
-                </div>
+
                 <!--NAVBAR MOBILE-->
                 <nav class="navbar navbar-expand-lg navbar-light bg-wight d-none-pc">
                     <div class="container-fluid nav-mobile">
@@ -79,6 +67,20 @@
                         </div>
                     </div>
                 </nav>
+                <img id="logo" src="./public/img/logo.svg" alt="Logo La Nîmes'Alerie">
+                <!-- SEARCHBAR PC VERSION-->
+                <div class="search" id="pc_search">
+                    <label for="search_bar"></label>
+                    <input class="inputs" type="search" id="search_bar" name="search_bar"
+                        placeholder="Recherche de produits..." aria-label="Search through site content">
+                    <button class="btn btn-white"><img class="icon" src="./public/img/searchsvg.svg"
+                            alt="Recherche"></button>
+                </div>
+                <!--ICONS CART LOGIN-->
+                <div class="logos">
+                    <img class="icon" src="./public/img/user.png" alt="Logo connexion">
+                    <img class="icon" src="./public/img/panier.png" alt="Logo panier">
+                </div>
                 <!--NAVBAR PC-->
                 <nav class="navbar navbar-expand-lg navbar-light bg-white nav-large navbar-pc w-100">
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
@@ -104,22 +106,22 @@
             </div>
         </header>
 
-        <!--######################### SECTION CAROUSEL ####################################-->
+        <!--######################### CAROUSEL ####################################-->
         <section id="section-carousel">
             <h1 class="text-center">L'animalerie pensée pour vos animaux&nbsp;!</h1>
             <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
+                        <img src="./public/img/banner_cat_present.jpg" class="d-block w-100"
+                            alt="Code promotionnel sur tout le rayon chat pour la journée internationale du chat">
+                    </div>
+                    <div class="carousel-item">
                         <img src="./public/img/banner_promo.jpg" class="d-block w-100"
                             alt="Bénéficiez de 5% sur tout le site en vous inscrivant à notre newsletter">
                     </div>
                     <div class="carousel-item">
                         <img src="./public/img/banner_space.png" class="d-block w-100"
                             alt="Offrez un voyage dans l'espace à votre compagnon">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./public/img/banner_cat_present.jpg" class="d-block w-100"
-                            alt="Code promotionnel sur tout le rayon chat pour la journée internationale du chat">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators"
@@ -135,13 +137,13 @@
             </div>
         </section>
 
-        <!--######################### SECTION BEST SELLERS ####################################-->
+        <!--######################### BEST SELLERS ####################################-->
         <section id="section-sales">
             <h2>Meilleures ventes</h2>
             <div id="grid-best-sellers">
-                <!--grande image-->
+                <!--big image-->
                 <img class="big" src="./public/img/arbre_chat_grand.png" alt="Arbre à chat design" width="100%">
-                <!--fiches produits-->
+                <!--product cards-->
                 <div class="product-card card1">
                     <img src="./public/img/panier_rex.png" alt="Panier Rex">
                     <p>Panier rond Rex</p>
@@ -214,7 +216,7 @@
             </div>
         </section>
 
-        <!--######################### SECTION NEWSLETTER ####################################-->
+        <!--######################### NEWSLETTER ####################################-->
         <section id="section-newsletter" class="mt-3 mb-5 d-flex flex-column justify-content-center align-items-center">
             <img src="./public/img/chien-noir-et-blanc.png" alt="Chien noir et blanc">
             <h2 class="text-center">Restez informés de nos offres et promos</h2>
@@ -224,7 +226,7 @@
             </div>
         </section>
 
-        <!--######################### SECTION NOTICES ####################################-->
+        <!--######################### NOTICES ####################################-->
         <section id="section-notices" class="mb-4">
             <h2 class="mb-4">Nos clients ont aimé</h2>
             <div class="container">
@@ -303,7 +305,7 @@
             </div>
         </section>
 
-        <!--######################### SECTIONS INFOS ####################################-->
+        <!--######################### INFOS ####################################-->
         <section id="section-infos" class="mb-4 w-100">
             <div class="bloc-infos">
                 <h3>Livraison</h3>

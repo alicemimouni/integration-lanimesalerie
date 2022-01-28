@@ -1,12 +1,18 @@
-
 body {
     margin: 0;
     text-align: center;
     box-sizing: border-box;
-    #bloc-page {   
-        #section-about .image-about, #grid-best-sellers .big,  #bar-delivery .return, .navbar-pc, #pc_search {
+
+    #bloc-page {
+
+        #section-about .image-about,
+        #grid-best-sellers .big,
+        #bar-delivery .return,
+        .navbar-pc,
+        #pc_search {
             display: none;
         }
+
         margin: auto;
         box-shadow: 0 10px 35px 0 rgb(0 0 0 / 18%);
         border: none;
@@ -15,17 +21,21 @@ body {
         align-items: center;
         justify-content: center;
         max-width: 1280px;
+
         h1 {
             margin: 1rem;
             margin-bottom: 2rem;
         }
+
         h2 {
-            
+
             padding: 1rem;
         }
+
         p {
             margin: 0 1rem;
         }
+
         a {
             text-decoration: none;
             color: $color-4;
