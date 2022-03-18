@@ -5,7 +5,7 @@ window.onscroll = function() {
 
     if (window.innerWidth > 990) {
 
-        if(document.documentElement.scrollTop > 80) {
+        if(document.documentElement.scrollTop > 130) {
 
             document.querySelector('#bloc-menu').style.display = "none";
         }
