@@ -1,20 +1,25 @@
 #section-about {
+
     max-width: 980px;
 
     p {
+
         text-align: center;
     }
 
     // images
     .image-about {
+
         position: relative;
         width: 500px;
 
         img {
+
             width: 200px;
         }
 
         .image-one {
+
             position: absolute;
             top: -30px;
             left: 80px;
@@ -22,6 +27,7 @@
         }
 
         .image-two {
+
             position: absolute;
             top: 30px;
             right: 60px;
@@ -29,6 +35,7 @@
         }
 
         .image-three {
+
             position: absolute;
             left: 80px;
             top: 100px;
@@ -38,12 +45,15 @@
 
     // span color title
     h2 {
+
         span {
+
             color: $color-1;
         }
     }
 
     .about-text {
+        
         margin: auto;
         display: flex;
         flex-direction: column;

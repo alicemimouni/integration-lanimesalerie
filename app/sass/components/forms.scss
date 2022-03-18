@@ -1,5 +1,6 @@
 // inputs type text
 .inputs {
+
     border-radius: $border-radius;
     padding: 0.5rem 1rem;
     margin: 1rem;
@@ -8,14 +9,18 @@
 }
 
 #search_bar {
+
     border: none;
     margin: 0;
 }
 
 .inputs:focus {
+
     outline: none;
     border: $border-style;
 }
+
 .search-icon {
+
     width: 30px;
 }

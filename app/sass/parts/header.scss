@@ -46,6 +46,7 @@ header {
             margin-right: 0.5rem;
 
             img {
+
                 margin-right: 0.5rem;
                 width: 23px;
             }
@@ -53,7 +54,9 @@ header {
         }
 
         .navbar {
+
             .container-fluid {
+
                 padding: 0;
             }
         }
@@ -63,7 +66,14 @@ header {
 
             .nav-mobile {
 
+                ul {
+                    li {
+                        color: $color-4;
+                    }
+                }
+
                 .navbar-toggler:focus {
+
                     box-shadow: none;
                     line-height: 0;
                 }
@@ -71,6 +81,7 @@ header {
         }
 
         #logo {
+
             width: 150px;
         }
 
@@ -79,11 +90,13 @@ header {
         justify-content: space-between;
 
         button {
+
             background-color: white;
             border: none;
         }
 
         button:focus {
+
             box-shadow: none;
         }
     }
@@ -97,6 +110,7 @@ header {
         }
 
         li:last-child {
+
             margin-right: 0;
         }
     }
@@ -143,6 +157,7 @@ header {
 
     // search products
     .search {
+
         display: flex;
         border: $border-style;
         border-radius: $border-radius;
@@ -155,13 +170,16 @@ header {
 
 // bar delivery return header
 #bar-delivery {
+
     display: flex;
     justify-content: space-between;
     background-color: $color-2;
     width: 100%;
 
     .del-ret {
+
         p {
+
             margin: 1rem;
             padding-left: 1rem;
         }
@@ -173,6 +191,7 @@ header {
 
         // icons bar delivery return
         img {
+            
             width: 40px;
             margin: 0.3rem 0;
         }
