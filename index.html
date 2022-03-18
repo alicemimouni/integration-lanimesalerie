@@ -16,9 +16,11 @@
 
     <div id="bloc-page">
 
-        <!--########################## HEADER ###################################-->
-        <!--HEADER DELIVERY RETURN-->
-        <div id="bar-delivery">
+        
+<!--######################### HEADER ####################################-->
+
+<!--HEADER DELIVERY RETURN-->
+  <div id="bar-delivery">
             <div class="del-ret">
                 <img src="./public/img/livraison.svg" alt="Logo livraison gratuite">
                 <p>Livraison offerte dès 49 €</p>
@@ -27,84 +29,87 @@
                 <img src="./public/img/retour.svg" alt="Logo retour gratuit">
                 <p>Retour gratuit sous 30 jours</p>
             </div>
-        </div>
-        <header>
-            <!--LOGO CART LOGIN NAVBAR-->
-            <div id="nav-bar">
+</div>
+<header class="d-flex justify-content-center align-items-center">
 
-                <!--NAVBAR MOBILE-->
-                <nav class="navbar navbar-expand-lg navbar-light bg-wight d-none-pc">
-                    <div class="container-fluid nav-mobile">
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Chien</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Chat</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Oiseau</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Rongeur</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Poisson</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Promos</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-                <img id="logo" src="./public/img/logo.svg" alt="Logo La Nîmes'Alerie">
-                <!-- SEARCHBAR PC VERSION-->
-                <div class="search" id="pc_search">
-                    <label for="search_bar"></label>
-                    <input class="inputs" type="search" id="search_bar" name="search_bar"
-                        placeholder="Recherche de produits..." aria-label="Search through site content">
-                    <button class="btn btn-white"><img class="search-icon" src="./public/img/searchsvg.svg"
-                            alt="Recherche"></button>
+    <!--LOGO BASKET NAVBAR-->
+    <div id="bloc-menu">
+        <!--NAVBAR MOBILE-->
+        <nav class="navbar navbar-mobile navbar-expand-lg navbar-light bg-wight d-none-pc">
+            <div class="container-fluid nav-mobile">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Chien</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Chat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Oiseau</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Rongeur</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Poisson</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Promos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
                 </div>
-                <!--ICONS CART LOGIN-->
-                <div class="logos">
-                    <img class="icon" src="./public/img/user.png" alt="Logo connexion">
-                    <img class="icon" src="./public/img/panier.png" alt="Logo panier">
-                </div>
-                <!--NAVBAR PC-->
-                <nav class="navbar navbar-expand-lg navbar-light bg-white nav-large navbar-pc w-100">
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav text-uppercase h3 w-100 d-flex justify-content-around">
-                            <a class="nav-item nav-link active" href="#">Chien</a>
-                            <a class="nav-item nav-link" href="#">Chat</a>
-                            <a class="nav-item nav-link" href="#">Poisson</a>
-                            <a class="nav-item nav-link" href="#">Rongeur</a>
-                            <a class="nav-item nav-link" href="#">Oiseau</a>
-                            <a class="nav-item nav-link promo" href="#">Promos</a>
-                            <a class="nav-item nav-link" href="#">Contact</a>
-                        </div>
-                    </div>
-                </nav>
             </div>
-            <!--SEARCHBAR PRODUCTS VERSION MOBILE-->
-            <div class="search d-none-pc">
-                <label for="search_bar"></label>
-                <input class="inputs" type="search" id="search_bar" name="search_bar"
-                    placeholder="Recherche de produits..." aria-label="Search through site content">
-                <button class="btn btn-white "><img class="search-icon" src="public/img/searchsvg.svg"
-                        alt="Recherche"></button>
+        </nav>
+   
+        <a href=""><img id="logo" src="./public/img/logo.svg" alt="Logo La Nîmes'Alerie"></a>
+        <div class="icons">
+            <!--LOGO CARD CONNEXION-->
+            <a href=""><img width="18px" src="public/img/magnifier.png"
+                    alt="Rechercher un produit"></a>
+            <a href=""><img src="public/img/panier.png" alt="Logo panier"
+                    width="20px"></a>
+            <a href=""><img src="public/img/user.png" alt="Logo connexion"
+                    width="22px"></a>
+        </div>
+    </div>
+
+    <!--NAVBAR PC-->
+    <nav class="navbar navbar-pc navbar-expand-lg navbar-light bg-white dNone container-fluid">
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav text-uppercase fs-4 d-flex flex-row justify-content-around w-100">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Chien</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Chat</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Oiseau</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Rongeur</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Poisson</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Promos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
             </div>
-        </header>
+        </div>
+    </nav>
+</header>
 
         <!--######################### CAROUSEL ####################################-->
         <section id="section-carousel">
@@ -228,7 +233,7 @@
 
         <!--######################### NOTICES ####################################-->
         <section id="section-notices" class="mb-4">
-            <h2 class="mb-4">Nos clients ont aimé</h2>
+            <h2>Nos clients ont aimé</h2>
             <div class="container">
                 <div class="notice">
                     <img class="profile" src="./public/img/avis1.png" alt="Photo de Sabrina R.">
@@ -360,6 +365,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
     </script>
+    <script src="script.js"></script>
 
 </body>
 

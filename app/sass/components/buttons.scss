@@ -22,6 +22,7 @@
     color: $color-1 !important;
     background-color: transparent;
     border: 1px solid $color-1;
+    transition: 1s;
 }
 
 // buttons color base
@@ -29,4 +30,6 @@
 .button-outline-color-base:hover {
     background-color: $color-1;
     color: white !important;
+    border: 1px solid $color-1;
+    transition: 1s;
 }
