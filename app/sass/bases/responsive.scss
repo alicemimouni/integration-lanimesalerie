@@ -45,6 +45,7 @@ body {
         // min 990px
         @media screen and (min-width: 990px) {
 
+            // menu
             #bloc-menu {
 
                 #logo {
@@ -66,6 +67,8 @@ body {
             }
 
             header {
+
+                position: initial;
 
                 .navbar-pc {
 
